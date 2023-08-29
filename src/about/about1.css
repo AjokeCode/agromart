@@ -1,0 +1,42 @@
+.about1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+.about1-img {
+    height: 45rem;
+    width: 42rem;
+    padding: 4rem 0 2rem 6rem;
+}
+.about1-right {
+   padding: 8rem 0 0 35rem;
+    
+}
+.about1-header{
+    color: #C76001;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.about1-header1{
+    color: #C76001;
+    margin-bottom: 2rem;
+    
+}
+.about1-header2{
+    color: #218225;
+    margin-bottom: 2rem;
+    
+}
+.about1-text{
+    width: 82%;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+.about1-text1{
+   
+}
+
+.about1-text2{
+    
+}

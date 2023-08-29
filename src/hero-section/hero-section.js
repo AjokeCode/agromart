@@ -1,4 +1,4 @@
-import Header from '../header/header';
+//import Header from '../header/header';
 import './hero-section.css'
 import hero from './hero.png';
 import { Link } from 'react-router-dom';
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Hero =()=>{
     return(
         <>
-        <Header/>
+       
         <section className='hero'>
         
             <img src={hero} alt='hero' className='hero-img'/>

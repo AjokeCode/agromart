@@ -23,9 +23,15 @@
     margin-right: 6rem;
     font-size: 2.1rem;
     cursor: pointer;
+    transition: all .2s;
 }
 .header-item {
     margin-left: 2rem;
+}
+
+.header-item:hover{
+    border-bottom: #218225 solid 2px;
+    outline-offset: 3px;
 }
 .header-btn{
     padding: 1.2rem 2rem;
