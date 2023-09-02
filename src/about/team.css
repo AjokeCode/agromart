@@ -1,0 +1,53 @@
+.team-section {
+    padding: 6rem 6rem 4rem 8rem;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+.team-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;
+    width: 253.51px;
+    border-radius: 10px;
+    margin-top: 35px;
+    background-color: #ffffff;
+    box-shadow: 0 0.1rem 1rem #999;
+}
+.team-img {
+    height: 160.09px;
+    width: 253.51px;
+    margin-top: -10px;
+}
+.team-section-header {
+    font-size: 2rem;
+    color: #C76001;
+    margin-bottom: 3rem;
+}
+.team-flex-column {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.team-header {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+.team-flex-column-header{
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+.team-flex-column-img{
+    margin-right: 2rem;
+}
+.twit {
+    margin-right: .8rem;
+}
+.line {
+    height: .15rem;
+    width: 86vw;
+    background-color: rgba(153, 153, 153, 0.5);
+}

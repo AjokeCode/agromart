@@ -1,0 +1,26 @@
+.about-header{
+    position: relative;
+    height: 32rem;
+}
+.about-header-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    z-index: -20;
+}
+.about-header-heads{
+    color: #ffffff;
+    padding: 15rem 0 0 10rem;
+    
+}
+.about-header-head{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.about-header-title{
+    font-size: 1.8rem;
+    width: 50%;
+    line-height: 27px;
+}

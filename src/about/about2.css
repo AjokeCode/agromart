@@ -1,57 +1,57 @@
-.about1 {
+.about2 {
     display: flex;
     justify-content: space-between;
     padding-top: 4rem;
 
 }
-.about1-img {
+.about2-img {
     height: 45rem;
-    padding: 4rem 24rem 2rem 8rem;
+    padding: 4rem 8rem 2rem 24rem;
 }
-.about1-right {
+.about2-right {
    padding-top: 8rem;
-   padding-right: 8rem;
+   padding-left: 8rem;
     
 }
-.about1-header{
+.about2-header{
     color: #C76001;
     font-weight: 700;
 }
-.about1-header1{
+.about2-header1{
     color: #C76001;
     margin-bottom: 2rem;
     font-size: 2rem;
     
     
 }
-.about1-header2{
+.about2-header2{
     color: #218225;
     margin-bottom: 2rem;
     font-size: 2.5rem;
     
     
 }
-.about1-text{
+.about2-text{
     
     font-size: 1.8rem;
     line-height: 1.4;
     margin-bottom: 2rem;
 }
-.about1-text1{
+.about2-text1{
    
 }
 
-.about1-text2{
+.about2-text2{
     
 }
-.about1-btn {
+.about2-btn {
     padding: 1.2rem 2rem;
     border-radius: 3px;
     border: none;
     background-color: #218225;
     
 }
-.about1-link {
+.about2-link {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.8rem;

@@ -26,7 +26,7 @@ const About1 =()=>{
                 you are joining us in this mission and supporting a better food system for all.
             </p>
             <button className='about1-btn'>
-                <Link>
+                <Link className='about1-link'>
                 Learn more
                 </Link>
             </button>

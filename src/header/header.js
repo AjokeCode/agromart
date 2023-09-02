@@ -11,7 +11,7 @@ const Header =()=>{
                     <Link to={'/'} className='header-link'>Home</Link>
                 </li>
                 <li className="header-item">
-                    About Us
+                <Link to={'/about'} className='header-link'>About Us</Link>
                 </li>
                 <li className="header-item">
                     Services

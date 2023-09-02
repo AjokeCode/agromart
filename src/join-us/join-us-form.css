@@ -1,0 +1,56 @@
+.joinus-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #2A303E;
+    padding: 2rem 15rem;
+}
+.joinus-form-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.joinus-form-1-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.joinus-form-header {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600;
+    color: #2A303E;
+}
+.joinus-form-1-input {
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 1.2rem 0 1.2rem 0;
+}
+.joinus-form-1-input:focus{
+    outline: none;
+}
+.joinus-form-1-head {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.joinus-form-line {
+    height: 2px;
+    width: 100%;
+    background-color: #E1E2E5;
+    margin-bottom: 2rem;
+}
+.more {
+    padding-left: 8rem;
+}
+.textarea{
+    height: 15rem;
+    width: 40rem;
+}
+.more-1 {
+    padding-left: 14rem;
+}
+.more-2 {
+    padding-right: 6rem;
+}
