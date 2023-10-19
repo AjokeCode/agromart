@@ -1,18 +1,20 @@
 .about-header{
     position: relative;
     height: 32rem;
-}
-.about-header-img {
-    position: absolute;
-    height: 100%;
     width: 100%;
+    background-image: url(./Banner.png);
     background-size: cover;
-    top: 0;
-    z-index: -20;
 }
 .about-header-heads{
     color: #ffffff;
     padding: 15rem 0 0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media(max-width: 769px){
+        padding: 12rem 0 0 0;
+        align-items: center;
+    }
     
 }
 .about-header-head{
@@ -23,4 +25,14 @@
     font-size: 1.8rem;
     width: 50%;
     line-height: 27px;
+    @media(max-width: 769px){
+        width: 70%;
+        text-align: center;
+    }
+    @media(max-width: 567px){
+        font-size: 1.3rem;
+        line-height: 21px;
+        width: 80%;
+        text-align: center;
+    }
 }

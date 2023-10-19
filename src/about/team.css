@@ -1,17 +1,29 @@
 .team-section {
-    padding: 6rem 6rem 4rem 8rem;
+    padding: 6rem 0 4rem 0;
+    @media(max-width: 769px){
+       padding: 3rem 0; 
+    }
 }
 .team-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0.5rem;
+    place-items: center;
+    
+    @media(max-width: 769px){
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    @media(max-width: 568px){
+        grid-template-columns: 1fr;
+        
+    }
 }
 .team-flex{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 220px;
-    width: 253.51px;
+    height: 22rem;
+    max-width: 25.351rem;
     border-radius: 10px;
     margin-top: 35px;
     background-color: #ffffff;
@@ -26,6 +38,7 @@
     font-size: 2rem;
     color: #C76001;
     margin-bottom: 3rem;
+    text-align: center;
 }
 .team-flex-column {
     display: flex;
@@ -48,6 +61,7 @@
 }
 .line {
     height: .15rem;
-    width: 86vw;
+    max-width: 100vw;
+    padding: 0 2rem;
     background-color: rgba(153, 153, 153, 0.5);
 }

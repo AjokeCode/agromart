@@ -14,7 +14,7 @@ const About2 =()=>{
                 Meet our awesome team
             </h1>
             <p className='about2-text about2-text1'>
-                We are passionate about bridgig the gap between farmers and consumers. Our team 
+                We are passionate about bridging the gap between farmers and consumers. Our team 
                 is made up of professionals who are committed to creating a sustainable futures 
                 from agriculture. From experts in farming techniques to marketing specialist, we have 
                 the skills and experience needed to connect farmers with customers to help them succeed.
@@ -30,7 +30,9 @@ const About2 =()=>{
                 </Link>
             </button>
             </div>
+            <div className='about2-left'>
             <img src={img1} alt='img1' className='about2-img'/>
+            </div>
         </div>
     )
 }

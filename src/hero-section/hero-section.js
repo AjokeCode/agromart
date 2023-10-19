@@ -11,7 +11,7 @@ const Hero =()=>{
        
         <section className='hero'>
         
-            <img src={hero} alt='hero' className='hero-img'/>
+            {/* <img src={hero} alt='hero' className='hero-img'/> */}
         
         <div className='hero-flex'>
             <h1 className='hero-title'>

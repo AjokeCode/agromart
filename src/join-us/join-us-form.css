@@ -4,22 +4,39 @@
     justify-content: space-between;
     color: #2A303E;
     padding: 2rem 15rem;
+    @media(max-width: 769px){
+        padding: 3rem 6rem;
+
+    }
+    @media(max-width: 567px){
+        padding: 3rem;
+
+    }
 }
 .joinus-form-1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
+    @media(max-width: 769px){
+        flex-direction: column;
+
+    }
 }
 .joinus-form-1-flex{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.joinus-form-header {
-    font-size: 28px;
-    line-height: 42px;
+.joinus-form-1-header {
+    font-size: 2.8rem;
+    line-height: 4.2rem;
     font-weight: 600;
     color: #2A303E;
+    @media(max-width: 769px){
+        margin-bottom: 2rem;
+    
+        }
+   
 }
 .joinus-form-1-input {
     padding: 1rem 1.2rem;
@@ -43,14 +60,37 @@
 }
 .more {
     padding-left: 8rem;
+    @media(max-width: 769px){
+    padding-left: 0;
+
+    }
 }
 .textarea{
     height: 15rem;
-    width: 40rem;
+    max-width: 40rem;
 }
 .more-1 {
     padding-left: 14rem;
+    @media(max-width: 769px){
+    padding-left: 0;
+
+    }
 }
 .more-2 {
     padding-right: 6rem;
+    @media(max-width: 769px){
+    padding-right: 0;
+
+    }
+}
+.submit-btn{
+    width: 14rem;
+    height: 5rem;
+    border-radius: 3px;
+    border: none;
+    background-color: #218225;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin: 3rem 0;
+    text-align: center;
 }

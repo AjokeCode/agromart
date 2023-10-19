@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 const About1 =()=>{
     return(
         <div className="about1">
-            
+            <div className='about1-left'>
             <img src={img1} alt='img1' className='about1-img'/>
-            
+            </div>
             <div className='about1-right'>
             <h1 className='about1-header about1-header1'>
                 Our Mission

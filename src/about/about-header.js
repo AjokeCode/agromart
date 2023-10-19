@@ -5,7 +5,7 @@ import './about-header.css'
 const AboutHeader =()=>{
     return(
         <section className='about-header'>
-            <img src={img} alt='banner' className='about-header-img'/>
+            {/* <img src={img} alt='banner' className='about-header-img'/> */}
             <div className='about-header-heads'>
                 <h1 className='about-header-head'>
                     About Us

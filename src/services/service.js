@@ -11,7 +11,7 @@ const Services =()=>{
                 Our Services
             </h1>
             <h1 className='about2-header about2-header2'>
-                Designed for everyone to participate <br/>
+                Designed for everyone to participate
                 in a healthy food ayatem with ease.
             </h1>
             <p className='about2-text about2-text1'>
@@ -24,7 +24,9 @@ const Services =()=>{
 
             </p>
             </div>
+            <div className='about2-left'>
             <img src={img} alt='img1' className='about2-img'/>
+            </div>
         </div>
     )
 }

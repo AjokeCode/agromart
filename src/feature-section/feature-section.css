@@ -1,11 +1,17 @@
 .feature {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 14rem 0 5rem 6rem;
+    place-items: center;
+    padding: 14rem 5rem 5rem 5rem;
+    width: 100%;
+    @media(max-width: 769px){
+        grid-template-columns: 1fr;
+        padding: 8rem 2rem 3rem 2rem;
+    }
 }
 .features {
-    height: 332px;
-    width: 394px;
+    height: 33.2rem;
+    max-width: 39.4rem;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0.1rem 1rem #999;
@@ -13,7 +19,24 @@
     flex-direction: column;
     justify-content: space-between;
     transition: all .2s;
+    padding: 3rem 3rem;
+    @media(max-width: 769px){
+        margin-bottom: 2rem;
+    }
+   
     
+}
+.feature-1{
+    margin-right: 1rem;
+    @media(max-width: 769px){
+        margin-right: 0;
+    }
+}
+.feature-3 {
+    margin-left: 1rem;
+    @media(max-width: 769px){
+       margin-left: 0;
+    }
 }
 .features:hover{
     transform: translateY(-1rem);
@@ -22,23 +45,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 3rem;
+    
 }
 .feature-1-header {
     color: #218225;
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
     font-weight: 600;
-    margin-right: 3rem;
+    margin-left: 3rem;
+    @media(max-width: 769px){
+        font-size: 1.6rem;
+    }
 }
 .feature-1-img {
-    margin-left: 3rem;
+
 }
 .feature-1-text {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 27px;
     font-weight: 400;
-    margin-left: 3rem;
+    @media(max-width: 769px){
+        font-size: 1.3rem;
+    }
+    
 }
 .feature-1-link{
     color: #1A78C2;
@@ -46,5 +75,5 @@
     line-height: 27px;
     font-weight: 400;
     text-decoration: none;
-    margin: 0 0 3rem 3rem;
+    
 }
