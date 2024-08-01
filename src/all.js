@@ -8,6 +8,7 @@ import Joinus1 from "./join-us/joinus-1";
 import Product from "./product/product";
 import Services from "./services/service";
 import Footer from "./footer/footer";
+import ProductHeader from "./product/product_header";
 
 const All = ()=>{
     return(
@@ -17,6 +18,7 @@ const All = ()=>{
         <About1/>
         <Services/>
         <Feature/>
+        <ProductHeader/>
         <Product/>
         <Customer/>
         <Joinus1/>

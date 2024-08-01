@@ -17,10 +17,10 @@ const Header =()=>{
                     Services
                 </li>
                 <li className="header-item">
-                    Products
+                    <Link to={'/product'} className='header-link'>Products</Link>
                 </li>
                 <li className="header-item">
-                    Cart
+                    <Link to={'/cart'} className='header-link'>Cart</Link>
                 </li>
                 <li className="header-item header-btn btn-white">
                     Sign in 

@@ -14,6 +14,7 @@
     color: #C76001;
     font-family: 'Odor Mean Chey', serif;
     margin-bottom: 2rem;
+    padding: 4rem 0 0 5rem;
     @media(max-width: 768px){
         text-align: center;
      }
