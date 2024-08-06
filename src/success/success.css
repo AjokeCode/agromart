@@ -1,0 +1,52 @@
+.success {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem;
+    width: 100%;
+    background-color: #ffffff;
+    @media(max-width: 769px){
+        padding: 2rem;
+        flex-direction: column;
+    }
+}
+
+.pay-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 60%;
+    min-height: 108.6rem;
+    background-color: #ffffff;
+    border: 1px solid #E1E2E5;
+    padding: 2rem;
+    border-radius: 10px;
+    @media(max-width: 769px){
+        width: 100%;
+        padding: 1rem;
+    }
+
+}
+.pay-header {
+    font-size: 3.5rem;
+    line-height: 5.25rem;
+    @media(max-width: 769px){
+       font-size: 2rem;
+       line-height: 3rem;
+    }
+}
+.pay-text {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-align: center;
+    @media(max-width: 769px){
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+.summary{
+    width: 30%;
+    @media(max-width: 769px){
+        width: 100%;
+    }
+}

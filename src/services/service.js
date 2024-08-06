@@ -3,7 +3,7 @@ import img from './Img (1).png';
 
 
 
-const Services =()=>{
+const Service =()=>{
     return(
         <div className="about2">
             <div className='about2-right'>
@@ -30,4 +30,4 @@ const Services =()=>{
         </div>
     )
 }
-export default Services;
+export default Service;

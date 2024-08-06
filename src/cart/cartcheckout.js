@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
+import "./cart.css";
 
 
 const Cartcheckout =()=>{
@@ -38,7 +40,7 @@ const Cartcheckout =()=>{
                     <p className="cc-text">#{totalCost}</p>
                 </div>
                 <div className="cc-flex cc-flex-1">
-                    <button className="cc-btn">Checkout</button>
+                    <button className="cc-btn"><Link to={"/checkout"} className="cc-link">Checkout</Link></button>
                     <button className="cc-btn cc-btn-1">Continue shopping</button>
                 </div>
                 
