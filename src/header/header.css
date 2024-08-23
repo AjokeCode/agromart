@@ -11,14 +11,39 @@
   font-family: "Porter Sans Block", serif;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(8px);
+  @media (max-width: 769px) {
+    display: none;
+  }
+}
+.header-mobile {
+  display: none;
+
+  @media (max-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    padding: 0 2rem;
+    font-family: "Porter Sans Block", serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+  }
 }
 .header-title {
   color: #218225;
   font-size: 3.3rem;
+  line-height: 5rem;
   font-weight: 700;
-  @media (max-width: 769px) {
-    font-size: 3rem;
-  }
+}
+.header-title-2 {
+  font-size: 3rem;
+  color: #218225;
+  font-weight: 700;
+  line-height: 3.5rem;
 }
 .header-lists {
   display: flex;

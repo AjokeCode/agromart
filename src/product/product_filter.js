@@ -20,7 +20,6 @@ const ProductFilter = () => {
         data-aos="zoom-in-up"
         data-aos-duration="1500"
       >
-        {/* <img src={img} alt='banner' className='about-header-img'/> */}
         <div className="about-header-heads">
           <h1 className="about-header-head">Our Products</h1>
           <p className="about-header-title">
