@@ -52,7 +52,7 @@ const Header = () => {
         </li>
       </ul>
 
-      {click ? (
+      {!click ? (
         <BsListNested onClick={() => setClick(true)} className="mobile-icon" />
       ) : (
         <div className="ham-div">
