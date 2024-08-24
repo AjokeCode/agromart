@@ -88,7 +88,6 @@
 .mobile-icon {
   display: none;
   @media (max-width: 769px) {
-    color: #218225;
     font-size: 3rem;
     display: block;
   }
