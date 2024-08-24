@@ -94,7 +94,8 @@ const Header = () => {
           </ul>
         </div>
       ) : (
-        <BsListNested onClick={() => setClick(true)} className="mobile-icon" />
+        // <BsListNested onClick={() => setClick(true)} className="mobile-icon" />
+        ""
       )}
     </div>
   );
