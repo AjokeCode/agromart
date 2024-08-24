@@ -90,6 +90,8 @@
   @media (max-width: 769px) {
     font-size: 3rem;
     display: block;
+    color: #218225;
+    cursor: pointer;
   }
 }
 .ham-div {
@@ -97,7 +99,7 @@
   @media (max-width: 769px) {
     display: flex;
     position: fixed;
-    inset: 0;
+    inset: 0px;
     justify-content: center;
     align-items: center;
     height: 100vh;
