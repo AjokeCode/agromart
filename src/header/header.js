@@ -49,7 +49,7 @@ const Header = () => {
 
       {!click ? (
         <BsListNested
-          className={`${isClick ? "hidden" : ""} mobile-icon`}
+          className={`${click ? "hidden" : ""} mobile-icon`}
           onClick={() => setClick(true)}
         />
       ) : (
