@@ -26,12 +26,7 @@ const Product = () => {
         {products.map((product, index) => {
           const itemInCart = items.find((item) => item.id === product.id);
           return (
-            <div
-              key={product.id}
-              className="product-flex"
-              data-aos="zoom-in-up"
-              data-aos-duration="1500"
-            >
+            <div key={product.id} className="product-flex">
               <img
                 src={product.imgSrc}
                 alt={`Product ${index + 1}`}
