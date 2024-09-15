@@ -12,7 +12,7 @@ const Hero = () => {
   }, []);
   return (
     <>
-      <section className="hero" data-aos="zoom-in-up" data-aos-duration="1500">
+      <section className="hero">
         {/* <img src={hero} alt='hero' className='hero-img'/> */}
 
         <div className="hero-flex">
