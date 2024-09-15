@@ -58,12 +58,16 @@ const Header = () => {
             onClick={() => setClick(true)}
           />
         ) : (
-          <div className="ham-div">
+          <div
+            className="ham-div"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <AiOutlineClose
               className="icon-1"
               onClick={() => setClick(false)}
             />
-            <ul className="nav">
+            <ul className="nav" data-aos="fade-right" data-aos-duration="1500">
               <li className="mobile-link">
                 <Link to={"/"} className="header-link-1">
                   Home
