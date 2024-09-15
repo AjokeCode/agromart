@@ -2,17 +2,12 @@ import "./header.css";
 import { Link } from "react-router-dom";
 import { BsListNested } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
-import { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useState } from "react";
 
 const Header = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   const [click, setClick] = useState(false);
   return (
-    <div className="header" data-aos="fade-right" data-aos-duration="1500">
+    <div className="header">
       <h1 className="header-title">Agromart</h1>
       <ul className="header-lists">
         <li className="header-item">
@@ -57,7 +52,7 @@ const Header = () => {
       ) : (
         <div className="ham-div">
           <AiOutlineClose className="icon-1" onClick={() => setClick(false)} />
-          <ul className="nav" data-aos="fade-right" data-aos-duration="1500">
+          <ul className="nav">
             <li className="mobile-link">
               <Link to={"/"} className="header-link-1">
                 Home
