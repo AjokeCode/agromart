@@ -48,7 +48,10 @@ const Header = () => {
       </ul>
 
       {!click ? (
-        <BsListNested onClick={() => setClick(true)} className="mobile-icon" />
+        <BsListNested
+          className={`${isClick ? "hidden" : ""} mobile-icon`}
+          onClick={() => setClick(true)}
+        />
       ) : (
         <div className="ham-div">
           <AiOutlineClose className="icon-1" onClick={() => setClick(false)} />

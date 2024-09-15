@@ -89,16 +89,19 @@
   display: none;
   @media (max-width: 769px) {
     font-size: 3rem;
-    display: inline-block;
+    display: block;
     color: #218225;
     cursor: pointer;
   }
+}
+.hidden {
+  display: none;
 }
 .ham-div {
   display: none;
   @media (max-width: 769px) {
     display: flex;
-    position: absolute;
+    position: fixed;
     inset: 0px;
     justify-content: center;
     align-items: center;
