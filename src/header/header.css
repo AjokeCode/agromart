@@ -74,7 +74,7 @@
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    z-index: 1500;
+    z-index: 2500;
     background-color: #218225;
   }
 }

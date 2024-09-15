@@ -63,7 +63,7 @@ const Header = () => {
               className="icon-1"
               onClick={() => setClick(false)}
             />
-            <ul className="nav" data-aos="fade-right" data-aos-duration="1500">
+            <ul className="nav">
               <li className="mobile-link">
                 <Link to={"/"} className="header-link-1">
                   Home
