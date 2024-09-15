@@ -1,14 +1,9 @@
 import "./product.css";
 import { useCart } from "react-use-cart";
 import { useProductstore } from "../store/productstore";
-import { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useState } from "react";
 
 const Product = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   const [inCart, setInCart] = useState([]);
   const { addItem } = useCart();
   const { items, updateItemQuantity } = useCart();
@@ -21,7 +16,7 @@ const Product = () => {
     alert("Added to cart");
   };
   return (
-    <div className="product" data-aos="fade-up" data-aos-duration="1500">
+    <div className="product">
       <p className="product-text">
         Discover all categories of our farm-to-table pricing and order fresh
         produce delivered straight to your doorstep, or visit us at the farm to
