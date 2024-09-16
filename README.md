@@ -30,15 +30,15 @@ _Features_
 
 - User-friendly product listing and search functionality
 - Market price updates and trends analysis
-- Fake product data powered by Fake Store API
+- Product data powered by created Store API using zustand 
 - Responsive design for mobile and desktop devices
 
 
 _Technologies Used_
 
-- Frontend: ReactJs
+- Frontend: ReactJs, Zustand 
 - Styling: Vanilla CSS
-- API: Fake Store API
+- API: Created Store API using zustand 
 
 
 _Installation_
