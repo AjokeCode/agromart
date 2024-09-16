@@ -1,27 +1,24 @@
 import img1 from "./about1.png";
 import "./about1.css";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 const About1 = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div className="about1">
       <div
         className="about1-left"
-        data-aos="zoom-in-right"
-        data-aos-duration="1500"
+        // data-aos="zoom-in-right"
+        // data-aos-duration="1500"
       >
         <img src={img1} alt="img1" className="about1-img" />
       </div>
       <div
         className="about1-right"
-        data-aos="zoom-in-left"
-        data-aos-duration="1500"
+        // data-aos="zoom-in-left"
+        // data-aos-duration="1500"
       >
         <h1 className="about1-header about1-header1">Our Mission</h1>
         <h1 className="about1-header about1-header2">
