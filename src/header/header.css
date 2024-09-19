@@ -4,7 +4,7 @@
   width: 100%;
   align-items: center;
   height: 8rem;
-  z-index: 500;
+  z-index: 1500;
   padding: 0 4rem;
   font-family: "Porter Sans Block", serif;
   background-color: rgba(255, 255, 255, 0.8);
@@ -74,7 +74,7 @@
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    z-index: 5000;
+    z-index: 2000;
     background-color: #218225;
   }
 }

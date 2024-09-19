@@ -3,16 +3,18 @@ import img1 from "./Connect.png";
 import img2 from "./Connect (1).png";
 import img3 from "./Connect (2).png";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 const Feature = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   return (
-    <section className="feature" data-aos="zoom-in-up" data-aos-duration="1500">
+    <section className="feature"
+      // data-aos="zoom-in-up" data-aos-duration="1500"
+    >
       <div className="features feature-1">
         <div className="feature-1-flex">
           <img src={img1} alt="img" className="feature-1-img" />

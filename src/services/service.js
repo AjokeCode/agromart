@@ -1,19 +1,19 @@
 import "../about/about2.css";
 import img from "./Img (1).png";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 const Service = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   return (
     <div className="about2">
       <div
         className="about2-right"
-        data-aos="zoom-in-left"
-        data-aos-duration="1500"
+        // data-aos="zoom-in-left"
+        // data-aos-duration="1500"
       >
         <h1 className="about2-header about2-header1">Our Services</h1>
         <h1 className="about2-header about2-header2">

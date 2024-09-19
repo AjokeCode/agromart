@@ -1,17 +1,19 @@
 import img1 from "./BG.svg";
 import img2 from "./BG (1).svg";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 import img4 from "./Review.svg";
 import "./customer.css";
 
 const Customer = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   return (
-    <div className="customer" data-aos="zoom-in-up" data-aos-duration="1500">
+    <div className="customer"
+      // data-aos="zoom-in-up" data-aos-duration="1500"
+    >
       <h1 className="customer-header">Our Customers</h1>
       <h2 className="customer-header-2">Don't just take our words</h2>
       <div className="customer-review">

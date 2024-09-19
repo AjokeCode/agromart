@@ -2,14 +2,14 @@
 import "./hero-section.css";
 import hero from "./hero.png";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 const Hero = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   return (
     <>
       <section className="hero">

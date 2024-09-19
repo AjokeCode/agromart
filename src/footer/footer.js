@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 import "./footer.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 const Footer = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   return (
     <footer
       className="footer"
-      data-aos="zoom-in-right"
-      data-aos-duration="1500"
+      // data-aos="zoom-in-right"
+      // data-aos-duration="1500"
     >
       <div className="footer-1">
         <div className="footer-1-content-1">

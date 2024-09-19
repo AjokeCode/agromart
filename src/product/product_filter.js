@@ -4,21 +4,21 @@ import { Link } from "react-router-dom";
 import Product from "./product";
 import Footer from "../footer/footer";
 import Header from "../header/header";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 const ProductFilter = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   return (
     <div>
       <Header />
       <section
         className="about-header-2"
-        data-aos="zoom-in-up"
-        data-aos-duration="1500"
+        // data-aos="zoom-in-up"
+        // data-aos-duration="1500"
       >
         <div className="about-header-heads">
           <h1 className="about-header-head">Our Products</h1>

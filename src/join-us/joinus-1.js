@@ -1,20 +1,20 @@
 import img1 from "../about/img2.png";
 import "../about/about1.css";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 const Joinus1 = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   return (
     <div className="about1">
       <div
         className="about1-left"
-        data-aos="zoom-in-right"
-        data-aos-duration="1500"
+        // data-aos="zoom-in-right"
+        // data-aos-duration="1500"
       >
         <img src={img1} alt="img1" className="about1-img" />
       </div>
