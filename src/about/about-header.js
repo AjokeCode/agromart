@@ -10,8 +10,8 @@ const AboutHeader = () => {
   return (
     <section
       className="about-header"
-      data-aos="zoom-in-left"
-      data-aos-duration="1500"
+      // data-aos="zoom-in-left"
+      // data-aos-duration="1500"
     >
       <div className="about-header-heads">
         <h1 className="about-header-head">About Us</h1>
