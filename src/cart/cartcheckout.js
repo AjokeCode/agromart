@@ -5,7 +5,7 @@ import { useCartStore } from "../store/cartstore";
 
 const Cartcheckout =()=>{
     const { cartTotal } = useCartStore((state) => ({
-            cartTotal: state.cartTotal
+            cartTotal: state.cartTotal()
         }))
         const shippingCost = {cartTotal} >= 5000 ? 1000 : 2000;
         const tax = (`${cartTotal}` / 10) * 0.02;
@@ -16,7 +16,7 @@ const Cartcheckout =()=>{
             <div className="cc-div">
                 <div className="cc-flex">
                     <h1 className="cc-header">Subtotal</h1>
-                    <p className="cc-text">#{cartTotal}</p>
+                    <p className="cc-text"># {cartTotal}</p>
                 </div>
                 <div className="cc-flex">
                     <h1 className="cc-header">Tax</h1>

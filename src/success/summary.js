@@ -4,7 +4,7 @@ import "./success.css"
 
 const Summary =()=>{
     const { cartTotal } = useCartStore((state) => ({
-        cartTotal: state.cartTotal,
+        cartTotal: state.cartTotal(),
         
     }))
     const shippingCost = {cartTotal} >= 5000 ? 1000 : 2000;
@@ -15,11 +15,11 @@ const Summary =()=>{
             <div className="os2-div">
                 <div className="os2-flex">
                     <h1 className="os2-header">Subtotal</h1>
-                    <p className="os2-text">#{cartTotal}</p>
+                    <p className="os2-text"># {cartTotal}</p>
                 </div>
                 <div className="os2-flex">
                     <h1 className="os2-header">Tax</h1>
-                    <p className="os2-text">#{tax}</p>
+                    <p className="os2-text"># {tax}</p>
                 </div>
                 <div className="os2-flex">
                     <h1 className="os2-header">Delivery fee</h1>
