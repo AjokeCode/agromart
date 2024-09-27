@@ -1,10 +1,13 @@
-import { useCart } from "react-use-cart";
 import img1 from"./Vector (17).svg";
 import "../cart/cart.css";
 import "./success.css";
+import { useCartStore } from "../store/cartstore";
 
 const Payment =()=>{
-    const {items, removeItem} = useCart();
+    
+    const { cart,  } = useCartStore((state) => ({
+        cart: state.cart,
+    }))
     return(
         <div className="pay-div">
             <h1 className="pay-header">Payment is successful</h1>
@@ -14,7 +17,7 @@ const Payment =()=>{
             </p>
             <h1 className="pay-text">Order details</h1>
             {
-                   items.map((item, index)=>(
+                   cart.map((item, index)=>(
                     <div className="cl-flex" key={index}>
                         <img src={item.imgSrc} alt="img" className="cl-1"/>
                         <div className="cl-2">

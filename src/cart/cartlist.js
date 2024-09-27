@@ -1,20 +1,15 @@
 import "./cart.css";
-import { useCart } from "react-use-cart";
 import img1 from "./material-symbols_delete-outline-rounded (1).svg";
+import { useCartStore } from "../store/cartstore";
 
 
 const Cartlist =()=>{
-    const {
-        isEmpty,
-        totalUniqueItems, 
-        items,
-        totalItems,
-        cartTotal,
-        updateItemQuantity,
-        removeItem,
-        emptyCart
-
-    } = useCart();
+    const { cart, updateItemQuantity, removeItem, totalUniqueItems } = useCartStore((state) => ({
+        cart: state.cart,
+        updateItemQuantity: state.updateItemQuantity,
+        removeItem: state.removeItem,
+        totalUniqueItems: state.totalUniqueItems
+    }))
     return(
         <div className="cl">
             <div className="cl-hs">
@@ -23,7 +18,7 @@ const Cartlist =()=>{
             </div>
             <div className="cl-div">
                 {
-                   items.map((item, index)=>(
+                   cart.map((item, index)=>(
                     <div className="cl-flex" key={index}>
                         <img src={item.imgSrc} alt="img" className="cl-1"/>
                         <div className="cl-2">

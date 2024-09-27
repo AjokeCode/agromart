@@ -1,20 +1,19 @@
 import "./product.css";
-import { useCart } from "react-use-cart";
 import { useProductstore } from "../store/productstore";
-import { useState } from "react";
+import { useCartStore } from "../store/cartstore";
 
 const Product = () => {
-  const [inCart, setInCart] = useState([]);
-  const { addItem } = useCart();
-  const { items, updateItemQuantity } = useCart();
+  const { addItem, cart, updateItemQuantity, inCart } = useCartStore((state) => ({
+    cart: state.cart,
+    addItem: state.addItem,
+    updateItemQuantity: state.updateItemQuantity,
+    inCart: state.inCart,
+  }));
+
   const { products } = useProductstore((state) => ({
     products: state.products,
   }));
-  const add = (e) => {
-    addItem(e);
-    setInCart((prev) => [prev, e.id]);
-    alert("Added to cart");
-  };
+
   return (
     <div className="product">
       <p className="product-text">
@@ -24,7 +23,9 @@ const Product = () => {
       </p>
       <div className="product-all">
         {products.map((product, index) => {
-          const itemInCart = items.find((item) => item.id === product.id);
+          const itemInCart = inCart(product.id);
+          const cartItem = cart.find((item) => item.id === product.id);
+
           return (
             <div key={product.id} className="product-flex">
               <img
@@ -49,26 +50,35 @@ const Product = () => {
               </p>
 
               {itemInCart ? (
-                <div>
+                <div className="product-flex-3">
                   <button
                     className="product-btn"
                     onClick={() =>
-                      updateItemQuantity(itemInCart.id, itemInCart.quantity + 1)
+                      updateItemQuantity(cartItem.id, cartItem.quantity + 1)
                     }
                   >
                     +
                   </button>
+                  <p className="product-flex-3-text">{cartItem.quantity}</p>
                   <button
                     className="product-btn"
                     onClick={() =>
-                      updateItemQuantity(itemInCart.id, itemInCart.quantity - 1)
+                      updateItemQuantity(cartItem.id, cartItem.quantity - 1)
                     }
                   >
                     -
                   </button>
                 </div>
               ) : (
-                <button className="product-btn" onClick={() => add(product)}>
+                  <button
+                    className="product-btn"
+                    onClick={() =>
+                      addItem({
+                        ...product,
+                        quantity: 1,
+                      })
+                  }
+                >
                   Add to cart
                 </button>
               )}

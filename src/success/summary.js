@@ -1,9 +1,12 @@
+import { useCartStore } from "../store/cartstore";
 import "../checkout/checkout.css";
 import "./success.css"
-import { useCart } from "react-use-cart";
 
 const Summary =()=>{
-    const {cartTotal} = useCart();
+    const { cartTotal } = useCartStore((state) => ({
+        cartTotal: state.cartTotal,
+        
+    }))
     const shippingCost = {cartTotal} >= 5000 ? 1000 : 2000;
     const tax = (`${cartTotal}` / 10) * 0.02;
     const totalCost = cartTotal + shippingCost + tax;

@@ -1,19 +1,18 @@
-import { useCart } from "react-use-cart";
 import img1 from "../cart/material-symbols_delete-outline-rounded (1).svg"
+import { useCartStore } from "../store/cartstore";
 import OrderSummary2 from "./ordersummary2";
 
 
 const OrderSummary =()=>{
-    const {
-        items,
-        updateItemQuantity,
-  
-      } = useCart();
+    const { cart, updateItemQuantity } = useCartStore((state) => ({
+        cart: state.cart,
+        updateItemQuantity: state.updateItemQuantity
+    }))
     return(
         <div className="ordersummary">
             <h1>Order Summary</h1>
             {
-                items.map((item, index)=> (
+                cart.map((item, index)=> (
                     <div className="os-div">
                         <img className="os-img" src={item.imgSrc} alt="img"/>
                         <div className="os-flex-1">
