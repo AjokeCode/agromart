@@ -34,20 +34,18 @@ export const useCartStore = create(
           })
       },
         totalUniqueItems: () => {
-          return get().cart.length()
+          return get().cart.length
       },
         totalItems: () => {
-          return get().cart.reduce((total, items)=> total + (items.quantity || 1), 0)
+          return get().cart.reduce((total, item)=> total + (item.quantity || 1), 0)
         },
-      totalPrice: () => {
-        return get().cart.reduce((total, items) => {
-            const quantity = 
-          })
-        }
-    }),
+        cartTotal: () => {
+          return get().cart.reduce((total, item) => total + (item.price * (item.quantity || 1 )), 0)
+          }
+        }),
     {
-      name: 'cart-storage',
-      storage: createJSONStorage(() => sessionStorage),
+      name: 'cart-store',
+      storage: createJSONStorage(() => localStorage),
     },
   ),
 )
