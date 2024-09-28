@@ -4,17 +4,17 @@ import { useCartStore } from "../store/cartstore";
 
 
 const Cartlist =()=>{
-    const { cart, updateItemQuantity, removeItem, totalItems } = useCartStore((state) => ({
+    const { cart, updateItemQuantity, removeItem, totalUniqueItems } = useCartStore((state) => ({
         cart: state.cart,
         updateItemQuantity: state.updateItemQuantity,
         removeItem: state.removeItem,
-        totalItems: state.totalItems()
+        totalUniqueItems: state.totalUniqueItems()
     }))
     return(
         <div className="cl">
             <div className="cl-hs">
             <h1 className="cl-h1">Your order list</h1>
-            <h1 className="cl-h2">{totalItems} items in the cart</h1>
+            <h1 className="cl-h2">{totalUniqueItems} items in the cart</h1>
             </div>
             <div className="cl-div">
                 {
